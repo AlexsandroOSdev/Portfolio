@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alexsandro Oliveira | Illustrator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div>
+      <p class="eyebrow">Illustrator</p>
+      <h1>Alexsandro Oliveira</h1>
+    </div>
+
+    <div class="header-actions">
+      <nav class="site-nav">
+        <a href="#about" data-i18n="navAbout">Sobre</a>
+        <a href="#gallery" data-i18n="navPortfolio">Portfólio</a>
+        <a href="#contact" data-i18n="navContact">Contato</a>
+      </nav>
+
+      <div class="lang-switcher" aria-label="Seletor de idioma">
+        <button type="button" class="lang-toggle is-active" id="lang-pt" data-lang="pt">PT</button>
+        <button type="button" class="lang-toggle" id="lang-en" data-lang="en">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="about">
+      <div class="hero-copy">
+        <p class="eyebrow" data-i18n="heroEyebrow">Portfolio</p>
+        <h2 data-i18n="heroTitle">Dando forma ao imaginário.</h2>
+        <p data-i18n="heroText">
+          Trabalho com estética de RPG, hachuras, simbolismo e composições dramáticas.
+          Aqui o objetivo é facilitar a navegação e deixar cada obra em destaque.
+        </p>
+        <div class="hero-actions">
+          <a href="https://www.instagram.com/ilustre.alex/" class="button button-dark" target="_blank" rel="noreferrer" data-i18n="heroCtaPrimary">Instagram</a>
+          <a href="mailto:alexsandro.os@icloud.com" class="button button-light" data-i18n="heroCtaSecondary">Email</a>
+        </div>
+      </div>
+
+      <div class="hero-preview">
+        <div class="preview-frame">
+          <img src="assets/foto.JPEG" alt="Retrato do artista" data-alt-pt="Retrato do artista" data-alt-en="Artist portrait" />
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery-section" id="gallery">
+      <div class="section-heading">
+        <div>
+          <h2 data-i18n="galleryTitle">Veja alguns trabalhos</h2>
+        </div>
+        <p data-i18n="galleryIntro">Clique na imagem para ver em tamanho maior.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <button type="button" class="gallery-card" data-lightbox-image="assets/IMG_1313.JPG" data-title-pt="Ilustração 1" data-title-en="Illustration 1">
+          <img src="assets/IMG_1313.JPG" alt="Ilustração 1" />
+          <span data-i18n="viewFullSize">Ver em tamanho real</span>
+        </button>
+
+        <button type="button" class="gallery-card" data-lightbox-image="assets/IMG_1784.JPG" data-title-pt="Ilustração 2" data-title-en="Illustration 2">
+          <img src="assets/IMG_1784.JPG" alt="Ilustração 2" />
+          <span data-i18n="viewFullSize">Ver em tamanho real</span>
+        </button>
+
+        <button type="button" class="gallery-card" data-lightbox-image="assets/IMG_1782.PNG" data-title-pt="Ilustração 3" data-title-en="Illustration 3">
+          <img src="assets/IMG_1782.PNG" alt="Ilustração 3" />
+          <span data-i18n="viewFullSize">Ver em tamanho real</span>
+        </button>
+
+        <button type="button" class="gallery-card" data-lightbox-image="assets/IMG_1783.PNG" data-title-pt="Ilustração 4" data-title-en="Illustration 4">
+          <img src="assets/IMG_1783.PNG" alt="Ilustração 4" />
+          <span data-i18n="viewFullSize">Ver em tamanho real</span>
+        </button>
+
+        <button type="button" class="gallery-card" data-lightbox-image="assets/IMG_1785.PNG" data-title-pt="Ilustração 5" data-title-en="Illustration 5">
+          <img src="assets/IMG_1785.PNG" alt="Ilustração 5" />
+          <span data-i18n="viewFullSize">Ver em tamanho real</span>
+        </button>
+
+        <button type="button" class="gallery-card" data-lightbox-image="assets/IMG_1787.PNG" data-title-pt="Ilustração 6" data-title-en="Illustration 6">
+          <img src="assets/IMG_1787.PNG" alt="Ilustração 6" />
+          <span data-i18n="viewFullSize">Ver em tamanho real</span>
+        </button>
+
+        <button type="button" class="gallery-card" data-lightbox-image="assets/IMG_1305.JPEG" data-title-pt="Ilustração 7" data-title-en="Illustration 7">
+          <img src="assets/IMG_1305.JPEG" alt="Ilustração 7" />
+          <span data-i18n="viewFullSize">Ver em tamanho real</span>
+        </button>
+
+        <button type="button" class="gallery-card" data-lightbox-image="assets/IMG_1786.PNG" data-title-pt="Ilustração 8" data-title-en="Illustration 8">
+          <img src="assets/IMG_1786.PNG" alt="Ilustração 8" />
+          <span data-i18n="viewFullSize">Ver em tamanho real</span>
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div>
+      <p data-i18n="footerTitle">Email</p>
+      <a href="mailto:alexsandro.os@icloud.com">alexsandro.os@icloud.com</a>
+    </div>
+    <p class="site-credit">Desenvolvido por Alexsandro de Oliveira</p>
+  </footer>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <div class="lightbox-overlay" data-lightbox-close></div>
+    <div class="lightbox-dialog" role="dialog" aria-modal="true" aria-label="Visualizador da obra" data-i18n-aria="lightboxDialog">
+      <button type="button" class="lightbox-close" data-lightbox-close aria-label="Fechar visualizador" data-i18n-aria="lightboxClose">×</button>
+      <div class="lightbox-controls">
+        <button type="button" class="lightbox-zoom-btn" data-lightbox-zoom-out aria-label="Diminuir zoom" data-i18n-aria="lightboxZoomOut">−</button>
+        <button type="button" class="lightbox-zoom-btn" data-lightbox-zoom-in aria-label="Aumentar zoom" data-i18n-aria="lightboxZoomIn">+</button>
+      </div>
+      <div class="lightbox-nav lightbox-nav-prev" data-lightbox-prev aria-label="Obra anterior" data-i18n-aria="lightboxPrev">‹</div>
+      <div class="lightbox-media">
+        <img id="lightbox-image" src="" alt="" />
+      </div>
+      <div class="lightbox-nav lightbox-nav-next" data-lightbox-next aria-label="Próxima obra" data-i18n-aria="lightboxNext">›</div>
+      <div class="lightbox-caption">
+        <p id="lightbox-title"></p>
+        <p id="lightbox-counter"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
